@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet"  href="style.css">
+
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/icons/favicon-32x32.png"
+    />
+
+    <!-- Animate CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+
+    <title>My portfolio</title>
+
+
+</head>
+<body>
+
+<!-- Navigation section -->
+<nav>
+        <h1>KAPIL KUMAR</h1>
+        <ul class="navigation">
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <!-- for mobile -->
+        <button class="burger-menu" id="burger-menu">
+            <ion-icon class="bars" name="menu-outline"></ion-icon>
+        </button>
+</nav>
+
+<!-- Hero section -->
+<section class="hero" id="about">
+        <img
+          src="/images/img.jpg"
+          alt="kapil-kumar"
+          loading="lazy"
+          class="hero-img"
+        />
+        
+        <div class="bio animate__animated animate__shakeX">
+          <h2 class="bio-title">About Me</h2>
+          <p class="bio-text">
+            An aspiring software engineer currently working as Associate Software Engineer at Cogoport.
+          </p>
+        </div>
+</section>
+
+<section class="more-about">
+    <h2>More About Me</h2>
+    <p>
+      Completed my B.Tech(Bachelors) from NIT Hamirpur. I live in Shimla currently residing in Mumbai.
+    </p>
+    <p>
+      I enjoy learning about new technologies, but Devops fascinates me the most. I can easily adapt to my surroundings.
+    </p>
+    <p>
+      I love to watch cricket and new webseries or movies.
+    </p>
+</section>
+
+<!-- skills -->
+
+<section class="skills" id="skills">
+    <h2 class="skill-header">Skills</h2>
+
+    <div class="skills-wrapper">
+        
+        <div class="second-set animate__animated animate__pulse">
+            <img
+            src="images/docker.png"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+            />
+            <img
+            src="images/KRgw2UkV_400x400.jpeg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+            />
+            <img
+            src="images/linux.jpeg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+            />
+            <img
+            src="images/django.png"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+            />
+        </div>
+
+        <div class="first-set animate__animated animate__pulse">
+          <img
+          src="/images/1200px-HTML5_logo_and_wordmark.svg.png"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+          />
+          <img
+          src="images/CSS3_logo_and_wordmark.svg.png"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+          />
+          <img
+          src="images/Javascript-shield.svg.png"
+          alt=""
+          loading="lazy"
+          class="icon icon-card"
+          />
+      </div>
+
+
+    </div>
+
+</section> 
+
+<!-- projects -->
+
+<section class="projects" id="projects">
+    <h2 class="projects-title">Some of my Recent Projects</h2>
+    <div class="projects-container">
+      <div class="project-container project-card">
+        <img
+          src="/images/face_recog.jpeg"
+          alt="face_recog"
+          loading="lazy"
+          class="project-pic"
+        />
+        <h3 class="project-title">Face recognition</h3>
+        <p class="project-details">
+          Created a face recognition model. on recognition of a particular face it launches an instance in AWS cloud and sends email on recognizition of the other face. 
+          
+        </p>
+        <a href="https://github.com/kapil111kumar/face-recog-email-whatsapp-aws-ec2-ebs" target="_blank" class="project-link">Check it Out</a>
+      </div>
+
+      <div class="project-container project-card">
+        <img
+          src="/images/dock_aws.png"
+          alt="Online_coding_judge"
+          loading="lazy"
+          class="project-pic"
+        />
+        <h3 class="project-title">Online Coding Judge</h3>
+        <p class="project-details">
+          Basic protoype of an coding evaluation platform using Docker and Django. I mainly worked on containerisation part.
+        </p>
+        <a href="https://github.com/kapil111kumar/Online_judge" target="_blank" class="project-link">Check it Out</a>
+      </div>
+      
+    </div>
+  </section>
+
+<!-- contact -->
+
+<section class="contact" id="contact">
+        <h2>Get In Touch With Me</h2>
+        <div class="contact-form-container">
+          <div class="contact-form">
+            <form action="https://formspree.io/f/xyylngw" method="POST">
+              <div class="form-control">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="sender-name"
+                  placeholder="Enter Your Name"
+                  class="input-field"
+                  required
+                />
+              </div>
+              <div class="form-control">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="sender-email"
+                  placeholder="Enter Your Email"
+                  class="input-field"
+                  required
+                />
+              </div>
+              <div class="form-control">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  cols="60"
+                  rows="10"
+                  placeholder="Enter Your Message"
+                  name="message"
+                  class="input-field"
+                  required
+                ></textarea>
+              </div>
+              <input
+                type="submit"
+                value="Submit"
+                id="submit-btn"
+                class="submit-btn"
+              />
+            </form>
+          </div>
+        </div>
+</section>
+
+<!-- social media -->
+<div class="socials">
+    <a href="https://www.linkedin.com/in/kapil-181-kumar/" target="_blank"
+      ><img
+        src="images/linkedin.png"
+        alt="Linkedin"
+        loading="lazy"
+        class="socicon"
+    /></a>
+    <a href="https://github.com/kapil111kumar" target="_blank"
+      ><img src="images/github.png" alt="Github" class="socicon"
+    /></a>
+</div>   
+
+
+
+
+<script src="website.js"></script>
+
+  <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+  ></script>
+
+
+</body>
+</html>
